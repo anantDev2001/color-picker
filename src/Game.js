@@ -31,6 +31,7 @@ const Game = () => {
     }
   };
   console.log(targetColor)
+  console.log("changed line");
 
   const resetGame = () => {
     setTargetColor(generateRandomColor());
