@@ -24,14 +24,16 @@ const Game = () => {
       return color >= target - buffer && color <= target + buffer;
     };
 
+    const newFunction = () => {
+      console.log("this is a function");
+    }
+
     if (isClose(red, targetRed) && isClose(green, targetGreen) && isClose(blue, targetBlue)) {
       setMessage('Correct! You guessed the color.');
     } else {
       setMessage('Incorrect! Try again.');
     }
   };
-  console.log(targetColor)
-  console.log("changed line");
 
   const resetGame = () => {
     setTargetColor(generateRandomColor());
